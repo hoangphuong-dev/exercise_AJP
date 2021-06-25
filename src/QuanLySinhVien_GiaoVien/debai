@@ -56,7 +56,7 @@ g. Chọn 7: Thoát
 Câu 4:
 Tạo lớp Teacher, kế thừa từ Person, lưu trữ thông tin một giảng viên
 
-- Lớp dạy: Lưu lớp mà giảng viên dạy giống như aptech (ví dụ C1011L, C0903H, C1010KV…)
+- Lớp dạy: Lưu lớp mà giảng viên dạy giống như aptech (ví dụ C1011L, C0903H, C1010K…)
 
 - Lương một giờ dạy
 
@@ -78,7 +78,6 @@ Lương thực nhân = lương một giờ dạy * số giờ dạy trong tháng
 
 Câu 5:
 Tạo lớp TeacherTest, chứa hàm Main kiểm tra chức năng của Teacher
-
 Tạo menu lựa chọn như sau:
 
 a. Chọn 1: Nhập vào n giảng viên (n là số lượng sinh viên, được nhập từ bàn phím)

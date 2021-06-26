@@ -1,0 +1,43 @@
+Thiết kế lớp abstract Device gồm các thuộc tính sau:
+
+- id: int
+
+- name: String
+
+- manufacturer: String
+
+- importedDate: Date
+
++ abstract input: void -> method
+
++ abstract display: void -> method
+
+Thiết kế lớp Computer kế thừa từ lớp Device gồm các thuộc tính
+
+- cpu: String
+
+- ram: String
+
+Thiết kế lớp Monitor kế thừa từ lớp Device gồm các thuộc tính
+
+- size: String (đơn vị inch, cm, m, ..)
+
+
+
+Yêu cầu: Tạo getter/setter, hàm tạo tương ứng, và toString() cho từng class object & 
+thiết kế ham nhập và hàm hiển thị.
+
+Tạo 1 mảng Device[] list = new Device[5] trong class Main (test chương trình)
+
+Thực hiện các chức năng sau:
+
+1. Nhập thông tin thiết bị. (Hỏi người dùng thiết bị cần nhập Computer hay Monitor) 
+-> Nhập đủ 5 thiết bị là kết thúc nhập
+
+2. Hiển thị thông tin thiết bị
+
+3. Hiển thị số Computer được nhập vào
+
+4. Hiển thị số Monitor được nhập vào.
+
+5. Thoát.

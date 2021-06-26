@@ -1,0 +1,79 @@
+1. Tạo lớp có tên Animal gồm các thuộc tính và phương thức:
+· String name
+
+· int age
+
+· ​String description
+
+· void display() //hiển thị tên, tuổi và mô tả của động vật
+
+  void input() //THuc hien nhap thong tin cua Animal
+
+· abstract void showSound()
+gokis
+  Tạo hàm tạo không đối và đầy đủ đối số
+
+  Tạo getter/setter
+
+2. Tạo các lớp Tiger, Dog, Cat theo các yêu cầu sau:
+
+Thừa kế từ lớp Animal
+Ghi đè phương thức showSound() để thể hiện những tiếng 
+kêu đặc trưng của từng loài vật
+3. Tạo lớp có tên Room gồm:
+· int roomNo
+· ​List<Animal> animalList
+
+· void addAnimal(Animal a) //thêm một con vật vào AnimalList
+
+· void removeAnimal(String name) //xóa con vật có tên tương ứng khỏi AnimalList
+
+  void display() -> Hiển thị thông tin mã chuồng + danh sách động vật
+
+  void input() -> Nhập mã chuồng
+
+  Hàm tạo ko đối và đầy đủ đối số
+
+  Tạo getter/setter
+
+  public static Animal createAnimal() 
+  -> Cho phép khởi tạo 1 động vật bất kỳ Tiger, Dog, Cat. 
+  (Hỏi người dùng động vật cần khỏi tạo 1. Tạo Tiger, 2. Tạo Dog, Khác 
+  -> Tạo Cat)
+
+4. Tạo lớp có tên Zoo gồm:
+
+· List<Animal> roomList
+
+  Tạo hàm tạo không tối 
+  -> Thực hiện khởi tạo roomList = new ArrayList<>() trong hàm tạo này.
+
+  void addAnimal(int roomNo, Animal a) -> Thực hiện thêm động vật vào chuồng theo mã roomNo
+
+  void removeAnimal(int roomNo, String name) -> Thực hiện xóa động vật theo tên -> trong chuồng có mã roomNo
+
+· void addRoom(Room r) //thêm chuồng vào roomList
+
+· void removeRoom(int roomNo) //xóa chuồng có mã tương ứng khỏi roomList
+
+  void display() -> Hiển thị thông tin toàn bộ room được quản lý trong Zoo.
+
+5. Tạo lớp có tên TestZoo chứa phương thức main() để quản lý sở thú theo dạng Menu như sau:
+
+Thêm chuồng
+Xóa chuồng
+Thêm con vật
+Xóa con vật
+Xem tất cả các con vật
+Thoát
+6. Khi người dùng lựa chọn 
+3 yêu cầu người dùng nhập vào mã chuồng (roomNo) muốn thêm động vật. 
+Và thực hiện thêm 1 động vật (Tiger, Dog, hoặc Cat) vào chuồng với roomNo vừa nhập
+
+7. Khi người dùng lựa chọn 3 yêu cầu người dùng nhập 
+vào mã chuồng (roomNo) muốn xóa động vật. 
+Sau đó yêu cầu người dùng nhập tên động vật cần xóa 
+-> Thực hiện xóa động vật đi.
+
+8. Khi người dùng chọn 5 thì hiển thị 
+thông tin cùng tiếng kêu của từng con vật trong sở thú.
